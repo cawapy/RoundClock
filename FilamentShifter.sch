@@ -1,0 +1,163 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Eigene Bauteile
+LIBS:RoundClock-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1450 2700 0    60   Input ~ 0
+VFDC
+Text HLabel 1450 2100 0    60   Input ~ 0
+VFAC1
+Text HLabel 1450 3300 0    60   Input ~ 0
+VFAC2
+Text HLabel 3200 2100 2    60   Output ~ 0
+F1
+Text HLabel 3200 3300 2    60   Output ~ 0
+F2
+$Comp
+L CP_Small C501
+U 1 1 5AAAF3D4
+P 2050 2100
+AR Path="/5AAC01F0/5AAC03F8/5AAC08BA/5AAAF3D4" Ref="C501"  Part="1" 
+AR Path="/5AAC050F/5AAC05F0/5AAC08BA/5AAAF3D4" Ref="C801"  Part="1" 
+F 0 "C801" V 2200 2050 50  0000 L CNN
+F 1 "47u/50V" V 1900 1900 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x6.7" H 2050 2100 50  0001 C CNN
+F 3 "" H 2050 2100 50  0001 C CNN
+	1    2050 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP_Small C502
+U 1 1 5AAAF421
+P 2050 3300
+AR Path="/5AAC01F0/5AAC03F8/5AAC08BA/5AAAF421" Ref="C502"  Part="1" 
+AR Path="/5AAC050F/5AAC05F0/5AAC08BA/5AAAF421" Ref="C802"  Part="1" 
+F 0 "C802" V 2200 3250 50  0000 L CNN
+F 1 "47u/50V" V 1900 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x6.7" H 2050 3300 50  0001 C CNN
+F 3 "" H 2050 3300 50  0001 C CNN
+	1    2050 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R501
+U 1 1 5AAAF458
+P 2600 2400
+AR Path="/5AAC01F0/5AAC03F8/5AAC08BA/5AAAF458" Ref="R501"  Part="1" 
+AR Path="/5AAC050F/5AAC05F0/5AAC08BA/5AAAF458" Ref="R801"  Part="1" 
+F 0 "R801" H 2630 2420 50  0000 L CNN
+F 1 "0K1" H 2630 2360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2600 2400 50  0001 C CNN
+F 3 "" H 2600 2400 50  0001 C CNN
+	1    2600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R502
+U 1 1 5AAAF487
+P 2600 3000
+AR Path="/5AAC01F0/5AAC03F8/5AAC08BA/5AAAF487" Ref="R502"  Part="1" 
+AR Path="/5AAC050F/5AAC05F0/5AAC08BA/5AAAF487" Ref="R802"  Part="1" 
+F 0 "R802" H 2630 3020 50  0000 L CNN
+F 1 "0K1" H 2630 2960 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2600 3000 50  0001 C CNN
+F 3 "" H 2600 3000 50  0001 C CNN
+	1    2600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2100 3200 2100
+Wire Wire Line
+	2600 2100 2600 2300
+Connection ~ 2600 2100
+Wire Wire Line
+	1450 2700 2600 2700
+Wire Wire Line
+	2600 2500 2600 2900
+Connection ~ 2600 2700
+Wire Wire Line
+	2150 3300 3200 3300
+Wire Wire Line
+	2600 3300 2600 3100
+Connection ~ 2600 3300
+Wire Wire Line
+	1950 2100 1450 2100
+Wire Wire Line
+	1950 3300 1450 3300
+$Comp
+L PWR_FLAG #FLG033
+U 1 1 5AAF6FBB
+P 3050 1900
+AR Path="/5AAC050F/5AAC05F0/5AAC08BA/5AAF6FBB" Ref="#FLG033"  Part="1" 
+AR Path="/5AAC01F0/5AAC03F8/5AAC08BA/5AAF6FBB" Ref="#FLG023"  Part="1" 
+F 0 "#FLG033" H 3050 1975 50  0001 C CNN
+F 1 "PWR_FLAG" H 3050 2050 50  0000 C CNN
+F 2 "" H 3050 1900 50  0001 C CNN
+F 3 "" H 3050 1900 50  0001 C CNN
+	1    3050 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG034
+U 1 1 5AAF6FD5
+P 3050 3150
+AR Path="/5AAC050F/5AAC05F0/5AAC08BA/5AAF6FD5" Ref="#FLG034"  Part="1" 
+AR Path="/5AAC01F0/5AAC03F8/5AAC08BA/5AAF6FD5" Ref="#FLG024"  Part="1" 
+F 0 "#FLG034" H 3050 3225 50  0001 C CNN
+F 1 "PWR_FLAG" H 3050 3300 50  0000 C CNN
+F 2 "" H 3050 3150 50  0001 C CNN
+F 3 "" H 3050 3150 50  0001 C CNN
+	1    3050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1900 3050 2100
+Connection ~ 3050 2100
+Wire Wire Line
+	3050 3150 3050 3300
+Connection ~ 3050 3300
+$EndSCHEMATC

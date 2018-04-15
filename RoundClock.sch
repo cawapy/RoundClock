@@ -1,0 +1,230 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Eigene Bauteile
+LIBS:RoundClock-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1600 2150 950  600 
+U 5AAAE185
+F0 "HV-Supply" 60
+F1 "HV-Supply.sch" 60
+F2 "-30V" O R 2550 2250 60 
+F3 "-25V" O R 2550 2350 60 
+F4 "-22V" O R 2550 2550 60 
+F5 "-17V" O R 2550 2650 60 
+$EndSheet
+$Comp
+L +5V #PWR01
+U 1 1 5AAAF206
+P 1250 900
+F 0 "#PWR01" H 1250 750 50  0001 C CNN
+F 1 "+5V" H 1250 1040 50  0000 C CNN
+F 2 "" H 1250 900 50  0001 C CNN
+F 3 "" H 1250 900 50  0001 C CNN
+	1    1250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 5AAAF25C
+P 1250 900
+F 0 "#FLG02" H 1250 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 1250 1050 50  0000 C CNN
+F 2 "" H 1250 900 50  0001 C CNN
+F 3 "" H 1250 900 50  0001 C CNN
+	1    1250 900 
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 8500 2150 1450 1000
+U 5AAC01F0
+F0 "RoundDisplay" 60
+F1 "RoundDisplay.sch" 60
+F2 "CS" I L 8500 3000 60 
+F3 "VFDC" I L 8500 2350 60 
+F4 "VFAC1" I L 8500 2550 60 
+F5 "VFAC2" I L 8500 2650 60 
+F6 "SGX" O L 8500 2900 60 
+F7 "VEE" I L 8500 2250 60 
+$EndSheet
+$Sheet
+S 8500 4000 1450 1000
+U 5AAC050F
+F0 "TextDisplay" 60
+F1 "TextDisplay.sch" 60
+F2 "VFDC" I L 8500 4200 60 
+F3 "VFAC1" I L 8500 4500 60 
+F4 "VFAC2" I L 8500 4400 60 
+F5 "CS" I L 8500 4900 60 
+F6 "SGX" O L 8500 4800 60 
+F7 "VEE" I L 8500 4100 60 
+$EndSheet
+$Sheet
+S 1600 3200 1100 800 
+U 5AADF426
+F0 "Logic" 60
+F1 "Logic.sch" 60
+F2 "CS_ROUND" O R 2700 3400 60 
+F3 "CS_TEXT" O R 2700 3900 60 
+F4 "SGX_ROUND" I R 2700 3300 60 
+F5 "SGX_TEXT" I R 2700 3800 60 
+F6 "FIL_CLK" O R 2700 3600 60 
+$EndSheet
+$Sheet
+S 4350 3450 1000 300 
+U 5AAEBBDF
+F0 "FilamentAC" 60
+F1 "FilamentAC.sch" 60
+F2 "FIL_CLK" I L 4350 3600 60 
+F3 "VFAC1" O R 5350 3550 60 
+F4 "VFAC2" O R 5350 3650 60 
+$EndSheet
+Wire Wire Line
+	3850 2900 8500 2900
+Wire Wire Line
+	3950 3000 8500 3000
+Wire Wire Line
+	6450 2550 6450 4100
+Wire Wire Line
+	2550 2650 6350 2650
+Wire Wire Line
+	2550 2550 6450 2550
+Wire Wire Line
+	5350 3550 7200 3550
+Wire Wire Line
+	7200 2550 7200 4500
+Wire Wire Line
+	7300 2650 7300 4400
+Connection ~ 7200 3550
+Connection ~ 7300 3650
+Wire Wire Line
+	3950 4800 8500 4800
+Wire Wire Line
+	3850 4900 8500 4900
+Wire Wire Line
+	6450 4100 8500 4100
+Wire Wire Line
+	6350 4200 8500 4200
+Wire Wire Line
+	7300 4400 8500 4400
+Wire Wire Line
+	7200 4500 8500 4500
+Wire Wire Line
+	5350 3650 7300 3650
+Wire Wire Line
+	6350 2650 6350 4200
+Wire Wire Line
+	2550 2250 8500 2250
+Wire Wire Line
+	2550 2350 8500 2350
+Wire Wire Line
+	7200 2550 8500 2550
+Wire Wire Line
+	8500 2650 7300 2650
+Wire Wire Line
+	2700 3300 3850 3300
+Wire Wire Line
+	3850 3300 3850 2900
+Wire Wire Line
+	3950 3000 3950 3400
+Wire Wire Line
+	3950 3400 2700 3400
+Wire Wire Line
+	2700 3800 3950 3800
+Wire Wire Line
+	3950 3800 3950 4800
+Wire Wire Line
+	3850 4900 3850 3900
+Wire Wire Line
+	3850 3900 2700 3900
+Wire Wire Line
+	4350 3600 2700 3600
+$Comp
+L Jack-DC J101
+U 1 1 5ABAF522
+P 2500 1150
+F 0 "J101" H 2500 1360 50  0000 C CNN
+F 1 "Jack-DC" H 2500 975 50  0000 C CNN
+F 2 "Connectors:BARREL_JACK" H 2550 1110 50  0001 C CNN
+F 3 "" H 2550 1110 50  0001 C CNN
+	1    2500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 5ABAF631
+P 2950 950
+F 0 "#PWR03" H 2950 800 50  0001 C CNN
+F 1 "+5V" H 2950 1090 50  0000 C CNN
+F 2 "" H 2950 950 50  0001 C CNN
+F 3 "" H 2950 950 50  0001 C CNN
+	1    2950 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5ABAF6D0
+P 2950 1350
+F 0 "#PWR04" H 2950 1100 50  0001 C CNN
+F 1 "GND" H 2950 1200 50  0000 C CNN
+F 2 "" H 2950 1350 50  0001 C CNN
+F 3 "" H 2950 1350 50  0001 C CNN
+	1    2950 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1050 2950 1050
+Wire Wire Line
+	2950 1050 2950 950 
+Wire Wire Line
+	2800 1250 2950 1250
+Wire Wire Line
+	2950 1150 2950 1350
+Wire Wire Line
+	2800 1150 2950 1150
+Connection ~ 2950 1250
+$EndSCHEMATC

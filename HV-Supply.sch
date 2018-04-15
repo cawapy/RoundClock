@@ -1,0 +1,286 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Eigene Bauteile
+LIBS:RoundClock-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3850 2400 2    60   Output ~ 0
+-30V
+Text HLabel 4750 2400 2    60   Output ~ 0
+-25V
+Text HLabel 5550 2400 2    60   Output ~ 0
+-22V
+Text HLabel 6450 2400 2    60   Output ~ 0
+-17V
+$Comp
+L DC-DC-Converter U201
+U 1 1 5AAAE8D9
+P 2500 3500
+F 0 "U201" H 2500 3550 60  0000 C CNN
+F 1 "DC-DC-Converter" H 2500 3450 60  0000 C CNN
+F 2 "Own:DC-DC-Dual-Out" H 2500 3500 60  0001 C CNN
+F 3 "" H 2500 3500 60  0001 C CNN
+	1    2500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5AAAE95D
+P 1750 3700
+F 0 "#PWR05" H 1750 3450 50  0001 C CNN
+F 1 "GND" H 1750 3550 50  0000 C CNN
+F 2 "" H 1750 3700 50  0001 C CNN
+F 3 "" H 1750 3700 50  0001 C CNN
+	1    1750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5AAAE974
+P 3250 3700
+F 0 "#PWR06" H 3250 3450 50  0001 C CNN
+F 1 "GND" H 3250 3550 50  0000 C CNN
+F 2 "" H 3250 3700 50  0001 C CNN
+F 3 "" H 3250 3700 50  0001 C CNN
+	1    3250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 5AAAE98A
+P 1750 3300
+F 0 "#PWR07" H 1750 3150 50  0001 C CNN
+F 1 "+5V" H 1750 3440 50  0000 C CNN
+F 2 "" H 1750 3300 50  0001 C CNN
+F 3 "" H 1750 3300 50  0001 C CNN
+	1    1750 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3250 3500
+$Comp
+L D_Zener_Small D201
+U 1 1 5AAAE9A7
+P 4450 2850
+F 0 "D201" V 4450 3000 50  0000 C CNN
+F 1 "Z5V" V 4450 2700 50  0000 C CNN
+F 2 "Diodes_SMD:D_MELF_Handsoldering" V 4450 2850 50  0001 C CNN
+F 3 "" V 4450 2850 50  0001 C CNN
+	1    4450 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener_Small D202
+U 1 1 5AAAEA14
+P 5300 2850
+F 0 "D202" V 5300 3000 50  0000 C CNN
+F 1 "Z8V" V 5300 2700 50  0000 C CNN
+F 2 "Diodes_SMD:D_MELF_Handsoldering" V 5300 2850 50  0001 C CNN
+F 3 "" V 5300 2850 50  0001 C CNN
+	1    5300 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener_Small D203
+U 1 1 5AAAEA33
+P 6150 2850
+F 0 "D203" V 6150 3000 50  0000 C CNN
+F 1 "Z13V" V 6150 2700 50  0000 C CNN
+F 2 "Diodes_SMD:D_MELF_Handsoldering" V 6150 2850 50  0001 C CNN
+F 3 "" V 6150 2850 50  0001 C CNN
+	1    6150 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R201
+U 1 1 5AAAEA5E
+P 4450 2050
+F 0 "R201" H 4480 2070 50  0000 L CNN
+F 1 "0M1" H 4480 2010 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 4450 2050 50  0001 C CNN
+F 3 "" H 4450 2050 50  0001 C CNN
+	1    4450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R202
+U 1 1 5AAAEA9B
+P 5300 2050
+F 0 "R202" H 5330 2070 50  0000 L CNN
+F 1 "0M1" H 5330 2010 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5300 2050 50  0001 C CNN
+F 3 "" H 5300 2050 50  0001 C CNN
+	1    5300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R203
+U 1 1 5AAAEAC0
+P 6150 2050
+F 0 "R203" H 6180 2070 50  0000 L CNN
+F 1 "0M1" H 6180 2010 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6150 2050 50  0001 C CNN
+F 3 "" H 6150 2050 50  0001 C CNN
+	1    6150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5AAAEAF3
+P 4450 1750
+F 0 "#PWR08" H 4450 1500 50  0001 C CNN
+F 1 "GND" H 4450 1600 50  0000 C CNN
+F 2 "" H 4450 1750 50  0001 C CNN
+F 3 "" H 4450 1750 50  0001 C CNN
+	1    4450 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5AAAEB1A
+P 5300 1750
+F 0 "#PWR09" H 5300 1500 50  0001 C CNN
+F 1 "GND" H 5300 1600 50  0000 C CNN
+F 2 "" H 5300 1750 50  0001 C CNN
+F 3 "" H 5300 1750 50  0001 C CNN
+	1    5300 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5AAAEB38
+P 6150 1750
+F 0 "#PWR010" H 6150 1500 50  0001 C CNN
+F 1 "GND" H 6150 1600 50  0000 C CNN
+F 2 "" H 6150 1750 50  0001 C CNN
+F 3 "" H 6150 1750 50  0001 C CNN
+	1    6150 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 3300 6150 3300
+Wire Wire Line
+	3600 3300 3600 2400
+Wire Wire Line
+	3600 2400 3850 2400
+Wire Wire Line
+	4450 3300 4450 2950
+Connection ~ 3600 3300
+Wire Wire Line
+	5300 3300 5300 2950
+Connection ~ 4450 3300
+Wire Wire Line
+	6150 3300 6150 2950
+Connection ~ 5300 3300
+Wire Wire Line
+	4450 2150 4450 2750
+Wire Wire Line
+	4450 1950 4450 1750
+Wire Wire Line
+	5300 2150 5300 2750
+Wire Wire Line
+	5300 1950 5300 1750
+Wire Wire Line
+	6150 2150 6150 2750
+Wire Wire Line
+	6150 1950 6150 1750
+Wire Wire Line
+	4450 2400 4750 2400
+Connection ~ 4450 2400
+Wire Wire Line
+	5300 2400 5550 2400
+Connection ~ 5300 2400
+Wire Wire Line
+	6150 2400 6450 2400
+Connection ~ 6150 2400
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 5AAF5BA1
+P 4900 3000
+F 0 "#FLG011" H 4900 3075 50  0001 C CNN
+F 1 "PWR_FLAG" H 4900 3150 50  0000 C CNN
+F 2 "" H 4900 3000 50  0001 C CNN
+F 3 "" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG012
+U 1 1 5AAF5BC1
+P 5750 3000
+F 0 "#FLG012" H 5750 3075 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 3150 50  0000 C CNN
+F 2 "" H 5750 3000 50  0001 C CNN
+F 3 "" H 5750 3000 50  0001 C CNN
+	1    5750 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG013
+U 1 1 5AAF5BDF
+P 6600 3000
+F 0 "#FLG013" H 6600 3075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6600 3150 50  0000 C CNN
+F 2 "" H 6600 3000 50  0001 C CNN
+F 3 "" H 6600 3000 50  0001 C CNN
+	1    6600 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 2600 4900 2600
+Wire Wire Line
+	4900 2600 4900 3000
+Connection ~ 4450 2600
+Wire Wire Line
+	5300 2600 5750 2600
+Wire Wire Line
+	5750 2600 5750 3000
+Connection ~ 5300 2600
+Wire Wire Line
+	6150 2600 6600 2600
+Wire Wire Line
+	6600 2600 6600 3000
+Connection ~ 6150 2600
+$EndSCHEMATC
