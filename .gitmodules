@@ -1,0 +1,3 @@
+[submodule "KiCadLib"]
+    path = KiCadLib
+    url = https://github.com/cawapy/KiCadLib.git
