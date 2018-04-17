@@ -1,5 +1,8 @@
 # Round Clock
 
+**Work in progress. Not yet ready.**
+**Do not produce PCB according to this project! This will not work.**
+
 This is a KiCad project for building a clock using these two VFD displays:
 
 ![displays.jpg](displays.jpg)
